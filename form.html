@@ -1,0 +1,95 @@
+<html>   
+   <head>
+      <title>Form Validation</title>      
+      <script type = "text/javascript"  src="validation.js"></script>  
+      <style>
+         .container{
+            border: 2px solid #f2f2f6;
+         }
+      </style>    
+   </head>
+   
+   <body>
+      <form method="post" onsubmit="return test();">
+      <div class="container">
+    
+         <table  cellpadding = "3">
+            
+            <tr>
+               <td align = "center"> First Name</td>
+               <td><input type = "text" name = "FName" id="fname"/><div id="fnameError" style="color: red";></div></td>
+               <td align = "center">Middle Name</td>
+               <td><input type = "text" name = "MName" id="mname"/></div></td>
+               
+            </tr>
+            
+            <tr>
+                <td align = "right">Last Name</td>
+                <td><input type = "text" name = "LName" id="lname" /><div id="lnameError" style="color: red";></div></td>
+            </tr>
+            
+            <tr>
+               <td align = "right">Sex</td>
+               <td>
+
+                  <input type="radio" id="male" name="gender" value="male"> Male
+                  <input type="radio" id="female" name="gender" value="female"> Female
+                  <input type="radio" id="trans" name="gender" value="tr"> Transgender
+
+                <div id="GError" style="color: red";>
+               </div>
+            </td>
+            </tr>
+            
+            <tr>
+               <td align = "right">Mobile</td>
+               <td>
+                <input type="text" id="mobile" name="Mobile" maxlength="10"/>
+                <div id="MError" style="color: red";></div>
+               </td>
+            </tr>
+            
+            <tr>
+                <td align = "right">Email</td>
+                <td>
+                 <input type="text" name="email" id="email" value=""/>
+                 <div id="EError" style="color: red";></div>
+                </td>
+             </tr>
+             
+            <tr>
+                <td align = "right">Aadhar No.</td>
+                <td>
+                 <input type="text" maxlength="12" id="aadharr" name="aadhar"/>
+                 <div id="AError" style="color: red";></div>
+                </td>
+             </tr>
+             
+            <tr>
+                <td align = "right">Pan Card </td>
+                <td>
+                 <input type="text" id="pan" name="pan" maxlength="10" />
+                 <div id="PError" style="color: red";></div>
+               </td>
+             </tr>
+             
+            <tr>
+                <td align = "right">Description</td>
+                <td>
+                    <textarea rows="5" cols="30" maxlength="600"id="des" name="about"placeholder="enter not more than 500 characters"></textarea>
+                    <div id="DError" style="color: red";></div>
+                </td>
+             </tr>
+            
+            <tr>
+               <td align = "right"></td>
+               <td><input type = "submit" value = "Submit" />
+               <!-- <div id="displayID"></div> -->
+               </td>
+            </tr>
+            
+         </table>
+      </div>   
+      </form>
+   </body>
+</html>
